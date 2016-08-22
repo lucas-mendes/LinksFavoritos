@@ -30,9 +30,9 @@ public class FramePrincipal extends JFrame {
         
         initComponentes();
         
-        setLocationRelativeTo(null);
-        
         setDefaultCloseOperation(EXIT_ON_CLOSE);
+        
+        setLocationRelativeTo(null);
     }
 
     private void initComponentes() {
