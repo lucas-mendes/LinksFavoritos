@@ -1,4 +1,4 @@
-package visao;
+package com.github.lucasm21.application.gui;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -10,11 +10,11 @@ import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JPanel;
-import visao.utils.Cor;
+import com.github.lucasm21.application.gui.util.Cor;
 
 /**
  *
- * @author lucas
+ * @author lucas-mendes
  */
 public class FramePrincipal extends JFrame {
     

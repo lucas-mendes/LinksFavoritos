@@ -1,10 +1,8 @@
-package gui;
-
-import visao.FramePrincipal;
+package com.github.lucasm21.application.gui;
 
 /**
  *
- * @author lucas
+ * @author lucas-mendes
  */
 public class Init {
     

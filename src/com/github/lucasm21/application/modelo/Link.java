@@ -1,8 +1,8 @@
-package modelo;
+package com.github.lucasm21.application.modelo;
 
 /**
  *
- * @author lucas
+ * @author lucas-mendes
  */
 public class Link {
     

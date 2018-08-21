@@ -1,8 +1,8 @@
-package gui.cadastro;
+package com.github.lucasm21.application.gui.cadastro;
 
 /**
  *
- * @author lucas
+ * @author lucas-mendes
  */
 public interface CadastroLink {
     

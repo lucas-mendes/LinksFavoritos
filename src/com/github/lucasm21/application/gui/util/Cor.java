@@ -1,8 +1,8 @@
-package visao.utils;
+package com.github.lucasm21.application.gui.util;
 
 /**
  *
- * @author lucas
+ * @author lucas-mendes
  */
 public class Cor {
     
