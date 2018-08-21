@@ -1,4 +1,4 @@
-package com.github.lucasm21.application.gui.util;
+package com.github.lucasm21.linksfavoritos.gui.util;
 
 /**
  *

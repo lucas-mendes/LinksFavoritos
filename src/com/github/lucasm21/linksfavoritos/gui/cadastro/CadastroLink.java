@@ -1,4 +1,4 @@
-package com.github.lucasm21.application.gui.cadastro;
+package com.github.lucasm21.linksfavoritos.gui.cadastro;
 
 /**
  *

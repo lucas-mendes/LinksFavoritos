@@ -1,4 +1,4 @@
-package com.github.lucasm21.application.modelo;
+package com.github.lucasm21.linksfavoritos.modelo;
 
 /**
  *
