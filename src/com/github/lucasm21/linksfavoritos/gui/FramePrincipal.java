@@ -5,6 +5,7 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Container;
 import javax.swing.BorderFactory;
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JMenu;
@@ -51,10 +52,48 @@ public class FramePrincipal extends JFrame {
         menuBar.add(menu3);
         menu1.add(menuItem1);
 
-        painelCentral.setBackground(Color.decode(cor.getCor()));
-        painelCentral.setBorder(BorderFactory.createMatteBorder(1, 1, 1, 1, Color.LIGHT_GRAY));
+        JButton buttonDefault = new JButton("Default");
+        buttonDefault.setBackground(Color.decode(cor.getButtonBackgroundDefault()));
+        buttonDefault.setForeground(Color.decode(cor.getButtonForegroundDefault()));
+        buttonDefault.setBorder(BorderFactory.createCompoundBorder(
+                BorderFactory.createLineBorder(Color.decode(cor.getButtonBorderDefault()), 1), 
+                BorderFactory.createEmptyBorder(4, 15, 4, 15)));
+//        buttonDefault.setBorderPainted(false);
+        buttonDefault.setFocusPainted(false);
+        JButton buttonEdit = new JButton("Edit");
+        buttonEdit.setBackground(Color.decode(cor.getButtonBackgroundEdit()));
+        buttonEdit.setForeground(Color.decode(cor.getButtonForegroundEdit()));
+        buttonEdit.setBorder(BorderFactory.createCompoundBorder(
+                BorderFactory.createLineBorder(Color.decode(cor.getButtonBorderEdit()), 1), 
+                BorderFactory.createEmptyBorder(4, 15, 4, 15)));
+//        buttonEdit.setBorderPainted(false);
+        buttonEdit.setFocusPainted(false);
+        JButton buttonOK = new JButton("OK");
+        buttonOK.setBackground(Color.decode(cor.getButtonBackgroundOK()));
+        buttonOK.setForeground(Color.decode(cor.getButtonForegroundOK()));
+        buttonOK.setBorder(BorderFactory.createCompoundBorder(
+                BorderFactory.createLineBorder(Color.decode(cor.getButtonBorderOK()), 1), 
+                BorderFactory.createEmptyBorder(4, 15, 4, 15)));
+//        buttonOK.setBorderPainted(false);
+        buttonOK.setFocusPainted(false);
+        JButton buttonWarning = new JButton("Warning");
+        buttonWarning.setBackground(Color.decode(cor.getButtonBackgroundWarning()));
+        buttonWarning.setForeground(Color.decode(cor.getButtonForegroundWarning()));
+//        buttonWarning.setMargin(new Insets(2, 15, 2, 15));
+        buttonWarning.setBorder(BorderFactory.createCompoundBorder(
+                BorderFactory.createLineBorder(Color.decode(cor.getButtonBorderWarning()), 1), 
+                BorderFactory.createEmptyBorder(4, 15, 4, 15)));
+//        buttonWarning.setBorderPainted(false);
+        buttonWarning.setFocusPainted(false);
 
-        painelStatus.setBackground(Color.decode(cor.getCor()));
+        painelCentral.setBackground(Color.decode(cor.getPanelCorDefault()));
+        painelCentral.setBorder(BorderFactory.createMatteBorder(1, 1, 1, 1, Color.LIGHT_GRAY));
+        painelCentral.add(buttonDefault);
+        painelCentral.add(buttonEdit);
+        painelCentral.add(buttonOK);
+        painelCentral.add(buttonWarning);
+        
+        painelStatus.setBackground(Color.decode(cor.getPanelCorDefault()));
         painelStatus.add(new JLabel("status"));
 
         container.setLayout(new BorderLayout());
