@@ -1,5 +1,6 @@
 package com.github.lucasm21.linksfavoritos.gui;
 
+import com.github.lucasm21.linksfavoritos.gui.cadastro.Cadastro;
 import com.github.lucasm21.linksfavoritos.gui.util.Cor;
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -98,8 +99,9 @@ public class FramePrincipal extends JFrame {
 
         container.setLayout(new BorderLayout());
 
-        container.add(menuBar, BorderLayout.NORTH);
-        container.add(painelCentral, BorderLayout.CENTER);
-        container.add(painelStatus, BorderLayout.SOUTH);
+//        container.add(menuBar, BorderLayout.NORTH);
+//        container.add(painelCentral, BorderLayout.CENTER);
+//        container.add(painelStatus, BorderLayout.SOUTH);
+        container.add(new Cadastro(), BorderLayout.CENTER);
     }
 }
